@@ -1,0 +1,20 @@
+G28 
+G1 X90 Y175 Z180
+;
+M291 P"Remove silicon protection, OK to continue" R"Change Nozzle..." S3
+;
+M291 P"Wait until nozzle is heated up to to 215°C" S3
+;
+M291 P"Heating" T5
+;
+; start heating hotend
+;
+M104 S215 ; set extruder temperature
+M109 S215 ; wait for extruder temp
+;
+;
+M291 P"Press OK if the Nozzle is changed, else press CANCEL to exit." R"Change Nozzle..." S3
+;
+M291 P"all ok" R"Change Nozzle..." S2
+;
+M109 S0
