@@ -11,7 +11,7 @@ G4 P1000	       ; Wait one second
 ;
 M98 P"0:/macros/09 Filament Handling/purge.g"
 ;
-G1 E-0.5 F200	   ; Retract 2mm of filament at 400mm/min
+G1 E-1 F200	   ; Retract 1mm of filament at 400mm/min
 ;
 M400               ; Wait for the moves to finish
 M84 E0             ; Turn off extruder drives 1 
